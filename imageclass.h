@@ -3,31 +3,25 @@
 #include <QWidget>
 #include <iostream>
 #include <opencv4/opencv2/opencv.hpp>
+
 #include "imagefilteroperations.h"
+#include "imagebasicoperations.h"
 
 using namespace cv;
 using namespace std;
 
-class imageClass:public imageFilterOperations
+class imageClass:public imageFilterOperations,public imageBasicOperations
 {
 protected:
      Mat selectedImage;
-     int labelWidth=237;
-     int labelHeight=539;
+
 public:
    //getter and setter methods
    void setImage(Mat selectedImage);
-   void setLabelSize(int labelWidth,int labelHeight);
-   int getWidthLabel();
-   int getHeightLabel();
+
    Mat getImage();
-   //----------------------
-
-
-   //operations
    imageClass();
-   QPixmap convertToPixmap(Mat filteredImage);
-   //----------------------
+
 };
 
 #endif // IMAGECLASS_H

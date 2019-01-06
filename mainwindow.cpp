@@ -7,7 +7,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QDebug>
-#include "imagefilteroperations.h"
+#include "imageclass.h"
 
 using namespace cv;
 using namespace std;

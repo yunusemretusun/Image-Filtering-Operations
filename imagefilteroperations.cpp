@@ -32,6 +32,7 @@ void imageFilterOperations::setImage(Mat selectedImage){
     this->selectedImage=selectedImage;
 
 }
+
 Mat imageFilterOperations::blurFilter(){
 
     for(int i = 1; i <getKernelSize()+2; i = i + 2){

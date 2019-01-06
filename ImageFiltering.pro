@@ -30,12 +30,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     imageclass.cpp \
-    imagefilteroperations.cpp
+    imagefilteroperations.cpp \
+    imagebasicoperations.cpp
 
 HEADERS += \
         mainwindow.h \
     imageclass.h \
-    imagefilteroperations.h
+    imagefilteroperations.h \
+    imagebasicoperations.h
 
 FORMS += \
         mainwindow.ui
